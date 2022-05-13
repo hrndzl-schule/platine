@@ -1,6 +1,7 @@
 public class Bohrloch {
     private int x, y;
     private String name;
+    private double[] entfernung = new double[10];
     
     public Bohrloch(String name, int x, int y) {
         this.name = name;
@@ -34,5 +35,13 @@ public class Bohrloch {
     
     public String getName() {
         return this.name;
+    }
+    
+    public double getEntfernung(int i) {
+        return this.entfernung[i];
+    }
+    
+    public void setEntfernung(int i, int value) {
+        this.entfernung[i] = value;
     }
 }
