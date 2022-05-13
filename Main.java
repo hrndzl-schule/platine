@@ -21,4 +21,19 @@ public class Main {
             i++;
         }
     }
+    
+    public double eukledischeMetrik(Bohrloch bohrloch1, Bohrloch bohrloch2) {
+        double xsquare = Math.pow(bohrloch2.getX() - bohrloch1.getX(), 2);
+        double ysquare = Math.pow(bohrloch2.getY() - bohrloch1.getY(), 2);
+        double result = Math.sqrt(xsquare + ysquare);
+        return result;
+    }
+    
+    public double maximumsMetrik(Bohrloch bohrloch1, Bohrloch bohrloch2) {
+        return Math.max(Math.abs(bohrloch2.getY() - bohrloch1.getY()), Math.abs(bohrloch2.getX() - bohrloch1.getX()));
+    }
+    
+    public double manhattanMetrik(Bohrloch bohrloch1, Bohrloch bohrloch2) {
+        return Math.abs(bohrloch2.getX() - bohrloch1.getX()) + Math.abs(bohrloch2.getY() - bohrloch1.getY());
+    }
 }
