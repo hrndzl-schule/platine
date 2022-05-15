@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     private static Bohrloch[] bohrloecher = new Bohrloch[10];
+    Graph graph = new Graph();
 
     public static void initializeBohrloecher() {
         for(int i = 0; i < bohrloecher.length; i++) {
@@ -90,11 +91,16 @@ public class Main {
         }
     }
     
+    public static void erstelleGraph() {
+        
+    }
+    
     public static void main(String[] args) throws FileNotFoundException {
         initializeBohrloecher();
         readFromCSV();
-        bestimmeNext(bohrloecher, 0);
-        entfernungenZuweisen();
-        route(0);
+        
+        // bestimmeNext(bohrloecher, 0);
+        // entfernungenZuweisen();
+        // route(0);
     }
 }
