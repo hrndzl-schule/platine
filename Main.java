@@ -98,9 +98,8 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         initializeBohrloecher();
         readFromCSV();
-        
-        // bestimmeNext(bohrloecher, 0);
-        // entfernungenZuweisen();
-        // route(0);
+        bestimmeNext(bohrloecher, 0);
+        entfernungenZuweisen();
+        route(0);
     }
 }
